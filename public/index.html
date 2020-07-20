@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:ital@1&display=swap" rel="stylesheet" />
+
+</head>
+<style>
+    body {
+        background-color: #b6b6b5;
+        font-family: 'Kanit', sans-serif;
+    }
+
+    .cshead {
+        /*เที่ยวด้วยกัน*/
+        height: 75px;
+        width: 100%;
+        text-align: center;
+        justify-self: right;
+        align-items: center;
+        font-size: 50px;
+
+    }
+
+    .langg {
+        /*EN/TH*/
+        text-align: right;
+
+    }
+
+    .topnav {
+        /*หัวโดยรวม*/
+        overflow: hidden;
+        background-color: #333;
+        width: 100%;
+
+    }
+
+    .topnav a {
+        /*ข้อความ*/
+        float: right;
+        display: block;
+        color: #f2f2f2;
+        text-align: center;
+        width: 16.66%;
+        height: 30px;
+        text-decoration: none;
+    }
+
+    .topnav a:hover {
+        /* เวลาเมาส์ไปโดน*/
+        background-color: #ddd;
+        color: black;
+        height: 30px;
+    }
+
+    .gg {
+        /*ตำแหน่งsearch*/
+        float: right;
+    }
+
+    .column {
+        float: left;
+        padding: 10px;
+    }
+
+    /* ด้านข้างซ้ายขวาเนื้อหา */
+    .column.side {
+        width: 5%;
+    }
+
+    /* เนื้อหา*/
+    .column.middle {
+        background: rgb(231, 238, 218);
+        width: 21.5%;
+    }
+
+    .column.middle.vedeo {
+        /*ส่วนของวีดีโอ*/
+        background: rgb(231, 238, 218);
+        width: 44.34%;
+        height: 400px;
+    }
+
+    .column.middle.under {
+        /*ตัวเลือกข้างล่าง*/
+        background: rgb(216, 188, 95);
+        height: 500px;
+        width: 13.9%;
+    }
+
+    .tt {
+        /*หัวข้อที่เที่ยว*/
+        text-align: left;
+    }
+
+    .t1 {
+        /*ข้อความใต้รูป*/
+        text-align: center;
+    }
+
+    .t2 {
+        /*ข้อความหัวข้อต่างๆของข้างล่าง*/
+        text-align: left;
+    }
+
+    .t3 {
+        /*ข้อความตัวเลือกต่างๆข้างล่าง*/
+        padding: 10px;
+    }
+
+    /* ทำให้ที่ทำทีหลังอยู่ข้างล่างเนื้อหา */
+    .row:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+
+    /* ซักอย่างเกี่ยวกับแบ่งคอลัม */
+    @media screen and (max-width: 600px) {
+
+        .column.side,
+        .column.middle,
+        .column.middle.vedeo,
+        .column.middle.under {
+            width: 100%;
+        }
+    }
+</style>
+
+<body>
+    <div class="langg">TH/EN</div>
+    <div class="cshead">
+        เที่ยวด้วยกัน
+    </div>
+    <div class="topnav">
+        <a href="#">ติดต่อเรา</a>
+        <a href="#">รีวิวร้านอาหาร</a>
+        <a href="#">รีวิวที่พัก</a>
+        <a href="#">รีวิวที่เที่ยว</a>
+        <a href="#">รีวิวจังหวัด</a>
+        <a href="#">หน้าแรก</a>
+    </div>
+    <!--ค้นหาโดย Google-->
+    <form class="gg" method="GET" action="http://www.google.co.th/custom" target="_blank">
+        <table cellspacing="3">
+            <tr>
+                <td align="center">
+                    <input type="hidden" name="hl" value="th"><input type="text" name="q" size="20" maxlength="255">
+                    <input type="submit" name="btnG" VALUE="ค้นหา.">
+                </td>
+            </tr>
+        </table>
+    </form><br><br>
+    <!---เนื้อหา-->
+    <div class="row">
+        <div class="column side">
+
+        </div>
+        <!--ที่เที่ยวยอดนิยม-->
+        <div class="column middle">
+            <div class="tt">ที่เที่ยวยอดนิยม</div>
+            <img src="image/mju.jpg" alt="แม่โจ้" width="300" height="150">
+            <div class="t1">แม่โจ้</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/ch.jpg" alt="เชียงใหม่" width="300" height="150">
+            <div class="t1">เชียงใหม่</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/cl.jpg" alt="เชียงราย" width="300" height="150">
+            <div class="t1">เชียงราย</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/maekam.jpg" alt="แม่กำปอง" width="300" height="150">
+            <div class="t1">แม่กำปอง</div>
+        </div>
+        <div class="column side">
+
+        </div>
+        <!--ที่เที่ยวใกล้กรุง-->
+        <div class="column middle">
+            <div class="tt">ที่เที่ยวใกล้กรุง</div>
+            <img src="image/ayut.jpg" alt="อยุธยา" width="300" height="150">
+            <div class="t1">อยุธยา</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/kaoyai.jpg" alt="เขาใหญ่" width="300" height="150">
+            <div class="t1">เขาใหญ่</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/nakorn.jpg" alt="นครนายก" width="300" height="150">
+            <div class="t1">นครนายก</div>
+        </div>
+        <div class="column middle">
+            <br>
+            <img src="image/pattaya.jpg" alt="พัทยา" width="300" height="150">
+            <div class="t1">พัทยา</div>
+        </div>
+        <div class="column side">
+
+        </div>
+        <!--วิดีโอยอดฮิต-->
+        <div class="column middle vedeo">
+            <div class="tt">วิดีโอยอดฮิต</div>
+            <iframe width="650" height="350" src="https://www.youtube.com/embed/yrDcap5sqIc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="column middle vedeo"><br><br><br><br><br><br><br>
+            <iframe width="350" height="200" src="https://www.youtube.com/embed/KCFT-pa3Wxc" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
+        <div class="column side">
+
+        </div>
+        <!--ตัวเลือกหาข้างล่าง-->
+        <div class="column middle under">
+            <div class="t2" style="color: gold;">จังหวัด<br></div>
+            <div class="t3">
+                <a href="">กรุงเทพมหานคร<br></a>
+                <a href="">กาญจนบุรี<br></a>
+                <a href="">ขอนแก่น<br></a>
+                <a href="">เชียงใหม่<br></a>
+                <a href="">จันทบุรี<br></a>
+                <a href="">นครนายก<br></a>
+                <a href="">นครปฐม<br></a>
+                <a href="">กำแพงเพชร<br></a>
+                <a href="">เชียงราย<br></a>
+                <a href="">น่าน<br></a>
+                <a href="">อุบลราชธานี<br></a>
+                <a href="">ระยอง<br></a>
+                <a href="">อุตรดิตถ์<br></a>
+                <a href="">ตราด<br></a>
+                <a href="">หนองบัวลำภู<br></a>
+                <a href="">อำนาจเจริญ<br></a>
+                <a href="">มุกดาหาร<br></a>
+                <a href="">หนองคาย<br></a>
+                <a href="">อยุธยา<br></a>
+            </div>
+        </div>
+        <div class="column middle under"><br>
+            <div class="t3">
+                <a href="">กระบี่<br></a>
+                <a href="">พังงา<br></a>
+                <a href="">เพชรบุรี<br></a>
+                <a href="">สงขลา<br></a>
+                <a href="">นครสวรรค์<br></a>
+                <a href="">ปทุมธานี<br></a>
+                <a href="">เพชรบุรี<br></a>
+                <a href="">อุดรธานี<br></a>
+                <a href="">แม่ฮ่องสอน<br></a>
+                <a href="">นราธิวาส<br></a>
+                <a href="">สมุทรปราการ<br></a>
+                <a href="">สมุทรสาคร<br></a>
+                <a href="">นนทบุรี<br></a>
+                <a href="">ชัยภูมิ<br></a>
+                <a href="">สุพรรณบุรี<br></a>
+                <a href="">สุรินทร์<br></a>
+                <a href="">ศรีสะเกษ<br></a>
+                <a href="">สุโขทัย<br></a>
+                <a href="">ภูเก็ต<br></a>
+            </div>
+        </div>
+        <div class="column middle under">
+            <div class="t2" style="color: gold;">ที่เที่ยว</div>
+            <div class="t3">
+                <a href="">เที่ยวใกล้กรุง<br></a>
+                <a href="">เกาะขามสัตหีบ<br></a>
+                <a href="">เกาะล้าน<br></a>
+                <a href="">เที่ยวชลบุรี1วัน<br></a>
+                <a href="">เที่ยวลับแล<br></a>
+                <a href="">เที่ยวลพบุรี 1 วัน<br></a>
+                <a href="">เที่ยวอัมพวา 1 วัน<br></a>
+                <a href="">เที่ยวอยุธยา 1 วัน<br></a>
+                <a href="">เที่ยวสุพรรณ 1 วัน<br></a>
+                <a href="">สังขละบุรี<br></a>
+                <a href="">ขุนแม่ยะ<br></a>
+            </div>
+        </div>
+        <div class="column middle under"><br>
+            <div class="t3">
+                <a href="">เขาค้อ<br></a>
+                <a href="">เที่ยวอุดร 1 วัน<br></a>
+                <a href="">เที่ยวปราจีนบุรี1วัน<br></a>
+                <a href="">เที่ยวจันทบุรี 1 วัน<br></a>
+                <a href="">เที่ยวระยอง1วัน<br></a>
+                <a href="">เบตง<br></a>
+                <a href="">เที่ยวปัตตานี<br</a>
+                        <a href="">เสม็ดนางชี<br></a>
+                        <a href="">ดอยแม่ตะมาน<br></a>
+                        <a href="">เที่ยวน่าน 2 วัน1 คืน<br></a>
+                        <a href="">เที่ยวกาญจนบุรี 2 วัน 1 คืน<br></a>
+            </div>
+        </div>
+        <div class="column middle under">
+            <div class="t2" style="color: gold;">ที่พัก</div>
+            <div class="t3">
+                <a href="">ที่พักน่าน<br></a>
+                <a href="">ที่พักแม่สอด<br></a>
+                <a href="">ที่พักเชียงใหม่<br></a>
+                <a href="">ที่พักบุรีรัมย์<br></a>
+                <a href="">ที่พักระนอง<br></a>
+                <a href="">ที่พักสวนผึ้ง<br></a>
+                <a href="">ที่พักเมืองภูเก็ต<br></a>
+                <a href="">ที่พักเกาะเสม็ด<br></a>
+                <a href="">ที่พักสุโขทัย<br></a>
+                <a href="">ที่พักเขาค้อ<br></a>
+                <a href="">ที่พักลำปาง<br></a>
+                <a href="">ที่พักระยอง<br></a>
+                <a href="">ที่พักปราณบุรี<br></a>
+                <a href="">ที่พักเกาะสีชัง<br></a>
+                <a href="">ที่พักลำพูน<br></a>
+                <a href="">ที่พักนครศรีธรรมราช<br></a>
+            </div>
+        </div>
+        <div class="column middle under"><br>
+            <div class="t3">
+                <a href="">ที่พักเชียงราย<br></a>
+                <a href="">ที่พักขอนแก่น<br></a>
+                <a href="">ที่พักหัวหิน<br></a>
+                <a href="">ที่พักตรัง<br></a>
+                <a href="">ที่พักบุรีรัมย์<br></a>
+                <a href="">ทีพักเขาใหญ่<br></a>
+                <a href="">ที่พักอัมพวา<br></a>
+                <a href="">ที่พักเชียงคาน<br></a>
+                <a href="">ที่พักบางแสน<br></a>
+                <a href="">ที่พักศรีราชา<br></a>
+                <a href="">ที่พักอุบล<br></a>
+                <a href="">ที่พักอุดรธานี<br></a>
+                <a href="">ที่พักเกาะหมาก<br></a>
+                <a href="">ที่พักร้อยเอ็ด<br></a>
+                <a href="">ที่พักกาญจนบุรี<br></a>
+                <a href="">ที่พักจันทบุรี<br></a>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+
+</html>
